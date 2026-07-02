@@ -11,18 +11,22 @@ export { default as SearchIcon } from './search_white.svg';
 export { default as FilterIcon } from './filter.svg';
 export { default as StarIcon } from './rating.svg';
 export { default as DownArrowIcon } from './downarrow.svg';
+export { default as RightArrowIcon } from './right_arrow.svg';
 
 export { default as BackIcon } from './left_arrow.svg';
 export { default as ShareIcon } from './phone.svg';
 export { default as PlusIcon } from './plus.svg';
+export { default as MinusIcon } from './minus.svg';
 export { default as LocationIcon } from './rating.svg';
 
 export { default as BikeIcon } from './bike.svg';
 export { default as CoffeeBeanIcon } from './coffee_bean.svg';
 export { default as MilkIcon } from './milk.svg';
 
-export { default as EditIcon } from './phone.svg';
+export { default as EditIcon } from './edit.svg';
+export { default as WalletIcon } from './wallet.svg';
+export { default as DocumentIcon } from './document.svg';
+export { default as DiscountIcon } from './discount.svg';
 
-export { default as DocumentIcon } from './phone.svg';
 export { default as PhoneIcon } from './phone.svg';
 export { default as MessageIcon } from './phone.svg';

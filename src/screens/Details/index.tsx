@@ -7,6 +7,7 @@ import {
   View,
   NativeSyntheticEvent,
   TextLayoutEventData,
+  StatusBar,
 } from 'react-native';
 import { NativeStackScreenProps } from '@react-navigation/native-stack';
 
@@ -67,8 +68,10 @@ const DetailsScreen = ({ navigation, route }: Props) => {
       return;
     }
 
-    console.log('Buy now:', coffee.id, selectedSize);
-  }, [coffee, selectedSize]);
+    navigation.navigate(Routes.Order, {
+      coffeeId: coffee.id,
+    });
+  }, [navigation, coffee]);
 
   const handleFavorite = useCallback(() => {
     if (!coffee) {
@@ -120,6 +123,8 @@ const DetailsScreen = ({ navigation, route }: Props) => {
 
   return (
     <View style={styles.screen}>
+      <StatusBar barStyle="dark-content" backgroundColor={Colors.white} />
+
       <AppHeader
         title="Detail"
         leftIcon={BackIcon}

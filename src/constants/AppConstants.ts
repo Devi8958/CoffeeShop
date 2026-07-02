@@ -31,10 +31,21 @@ const AppConstants = {
   },
 
   order: {
+    title: 'Order',
     delivery: 'Deliver',
     pickup: 'Pick Up',
+    deliveryAddress: 'Delivery Address',
+    addressTitle: 'Jl. Kpg Sutoyo',
+    addressDescription: 'Kpg. Sutoyo No. 620, Bilzen, Tanjungbalai.',
+    editAddress: 'Edit Address',
+    addNote: 'Add Note',
+    discountApplied: '1 Discount is Applies',
     paymentSummary: 'Payment Summary',
+    price: 'Price',
+    deliveryFee: 'Delivery Fee',
+    cashWallet: 'Cash/Wallet',
     orderNow: 'Order',
+    itemNotFound: 'Order item not found',
   },
 
   delivery: {
