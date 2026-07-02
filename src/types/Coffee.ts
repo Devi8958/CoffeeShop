@@ -10,6 +10,7 @@ export interface Coffee {
   description: string;
   sizes: string[];
   isAvailable: boolean;
+  isFavorite?: boolean;
   promo: boolean;
   promoText: string;
 }

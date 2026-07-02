@@ -4,6 +4,7 @@ import 'react-native-gesture-handler';
 import RNBootSplash from 'react-native-bootsplash';
 
 import AppNavigator from './src/navigation/AppNavigator';
+import { CoffeeProvider } from './src/context/CoffeeContext';
 
 const App = () => {
   useEffect(() => {
@@ -12,9 +13,11 @@ const App = () => {
 
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#111111" />
+      <CoffeeProvider>
+        <StatusBar barStyle="light-content" backgroundColor="#111111" />
 
-      <AppNavigator />
+        <AppNavigator />
+      </CoffeeProvider>
     </>
   );
 };

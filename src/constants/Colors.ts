@@ -6,6 +6,7 @@ const Colors = {
   darkGrey: '#111111',
 
   background: '#F9F9F9',
+  iconBackground: '#F6F6F6',
 
   yellow: '#FBBE21',
   categoryBackground: '#EDEDED59',

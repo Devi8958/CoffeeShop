@@ -6,7 +6,7 @@ interface HomeData {
   categories: Category[];
 }
 
-export const loadHomeData = async (): Promise<HomeData> => {
+export const getHomeData = async (): Promise<HomeData> => {
   const [coffees, apiCategories] = await Promise.all([fetchCoffeeList(), fetchCategoryList()]);
 
   const categories: Category[] = [
@@ -23,7 +23,7 @@ export const loadHomeData = async (): Promise<HomeData> => {
   };
 };
 
-export const filterCoffees = (
+export const getFilteredCoffees = (
   coffees: Coffee[],
   selectedCategoryId: string,
   searchText: string,

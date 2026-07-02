@@ -17,7 +17,10 @@ export { default as ShareIcon } from './phone.svg';
 export { default as PlusIcon } from './plus.svg';
 export { default as LocationIcon } from './rating.svg';
 
-export { default as BikeIcon } from './phone.svg';
+export { default as BikeIcon } from './bike.svg';
+export { default as CoffeeBeanIcon } from './coffee_bean.svg';
+export { default as MilkIcon } from './milk.svg';
+
 export { default as EditIcon } from './phone.svg';
 
 export { default as DocumentIcon } from './phone.svg';

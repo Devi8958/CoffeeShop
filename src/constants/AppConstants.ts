@@ -22,6 +22,12 @@ const AppConstants = {
     descriptionTitle: 'Description',
     sizeTitle: 'Size',
     buyNow: 'Buy Now',
+    price: 'Price',
+    readMore: 'Read More',
+    readless: 'Read Less',
+    detailNotFound: 'Coffee details not found',
+    goBack: 'Go Back',
+    loading: ' Loading details...',
   },
 
   order: {
