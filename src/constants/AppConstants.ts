@@ -50,7 +50,12 @@ const AppConstants = {
 
   delivery: {
     title: '10 minutes left',
-    status: 'Your delivery is on the way',
+    statusPrefix: 'Delivery to',
+    address: 'Jl. Kpg Sutoyo',
+    orderStatusTitle: 'Delivering your order',
+    orderStatusDescription: 'We will deliver your goods to you in the shortest possible time.',
+    courierName: 'Brooklyn Simmons',
+    courierRole: 'Personal Courier',
     call: 'Call',
   },
 };

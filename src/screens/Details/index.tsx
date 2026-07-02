@@ -123,7 +123,7 @@ const DetailsScreen = ({ navigation, route }: Props) => {
 
   return (
     <View style={styles.screen}>
-      <StatusBar barStyle="dark-content" backgroundColor={Colors.white} />
+      <StatusBar barStyle="dark-content" backgroundColor={Colors.transparent} translucent />
 
       <AppHeader
         title="Detail"

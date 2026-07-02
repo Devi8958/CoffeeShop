@@ -45,6 +45,9 @@ const OrderScreen = ({ navigation, route }: Props) => {
     navigation.goBack();
   }, [navigation]);
 
+  const handleOrderPress = useCallback(() => {
+    navigation.navigate(Routes.Delivery);
+  }, [navigation]);
   if (!coffee) {
     return (
       <View style={styles.centerContainer}>
@@ -55,7 +58,7 @@ const OrderScreen = ({ navigation, route }: Props) => {
 
   return (
     <View style={styles.screen}>
-      <StatusBar barStyle="dark-content" backgroundColor={Colors.white} />
+      <StatusBar barStyle="dark-content" backgroundColor={Colors.transparent} translucent />
 
       <AppHeader
         title={AppConstants.order.title}
@@ -169,7 +172,7 @@ const OrderScreen = ({ navigation, route }: Props) => {
 
         <AppButton
           title={AppConstants.order.orderNow}
-          onPress={() => {}}
+          onPress={handleOrderPress}
           buttonStyle={styles.orderButton}
         />
       </View>

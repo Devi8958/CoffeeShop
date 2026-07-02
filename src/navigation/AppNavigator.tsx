@@ -9,7 +9,7 @@ import SplashScreen from '../screens/Splash';
 import BottomTabNavigator from './BottomTabNavigator';
 import DetailsScreen from '../screens/Details';
 import OrderScreen from '../screens/Order';
-//import DeliveryScreen from '../screens/Delivery';
+import DeliveryScreen from '../screens/Delivery';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -21,7 +21,7 @@ const AppNavigator = () => {
         <Stack.Screen name={Routes.BottomTabs} component={BottomTabNavigator} />
         <Stack.Screen name={Routes.Details} component={DetailsScreen} />
         <Stack.Screen name={Routes.Order} component={OrderScreen} />
-        <Stack.Screen name={Routes.Delivery} component={DetailsScreen} />
+        <Stack.Screen name={Routes.Delivery} component={DeliveryScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

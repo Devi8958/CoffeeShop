@@ -17,7 +17,7 @@ export { default as BackIcon } from './left_arrow.svg';
 export { default as ShareIcon } from './phone.svg';
 export { default as PlusIcon } from './plus.svg';
 export { default as MinusIcon } from './minus.svg';
-export { default as LocationIcon } from './rating.svg';
+export { default as LocationIcon } from './gps.svg';
 
 export { default as BikeIcon } from './bike.svg';
 export { default as CoffeeBeanIcon } from './coffee_bean.svg';
