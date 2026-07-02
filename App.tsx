@@ -1,6 +1,5 @@
-// src/App.tsx
-
 import React, { useEffect } from 'react';
+import { StatusBar } from 'react-native';
 import 'react-native-gesture-handler';
 import RNBootSplash from 'react-native-bootsplash';
 
@@ -11,7 +10,13 @@ const App = () => {
     RNBootSplash.hide({ fade: true });
   }, []);
 
-  return <AppNavigator />;
+  return (
+    <>
+      <StatusBar barStyle="light-content" backgroundColor="#111111" />
+
+      <AppNavigator />
+    </>
+  );
 };
 
 export default App;

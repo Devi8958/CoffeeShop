@@ -9,8 +9,13 @@ const AppConstants = {
 
   home: {
     location: 'Location',
+    locationName: 'Bilzen, Tanjungbalai',
     searchPlaceholder: 'Search coffee',
     allCoffee: 'All Coffee',
+    promoFlag: 'Promo',
+    promoTitle1: 'Buy one get',
+    promoTitle2: 'one FREE',
+    noCoffeeFound: 'No coffee found',
   },
 
   details: {
