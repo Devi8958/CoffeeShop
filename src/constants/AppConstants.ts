@@ -58,6 +58,14 @@ const AppConstants = {
     courierRole: 'Personal Courier',
     call: 'Call',
   },
+
+  tabs: {
+    notification: 'Notifications',
+    cart: 'Cart',
+    favorites: 'Favorites',
+    comingSoon: 'Coming Soon',
+    description: 'This feature will be coming soon',
+  },
 };
 
 export default AppConstants;

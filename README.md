@@ -1,97 +1,227 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# Getting Started
+# Coffee Shop
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+A modern Coffee Shop mobile application built using React Native and TypeScript following scalable architecture, reusable components, clean code practices, and Context API state management.
 
-## Step 1: Start Metro
+---
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+## Features
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+- Splash Screen using React Native BootSplash
+- Home Screen
+- Coffee Details Screen
+- Order Screen
+- Delivery Tracking Screen
+- Notification Screen
+- Search Coffee
+- Category Filtering
+- Favorite / Unfavorite Coffee
+- Dynamic Price Calculation
+- Quantity Increment / Decrement
+- Read More / Read Less Description
+- Reusable Components
+- Context API State Management
+- Mock REST API Integration
+- TypeScript Support
 
-```sh
-# Using npm
-npm start
+---
 
-# OR using Yarn
-yarn start
-```
+## Tech Stack
 
-## Step 2: Build and run your app
+- React Native
+- TypeScript
+- React Navigation
+- Context API
+- React Native BootSplash
+- Fetch API
+- Mock API
+- Functional Components
+- React Hooks
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+---
 
-### Android
+## Project Structure
 
-```sh
-# Using npm
-npm run android
+src
+├── api
+├── assets
+│ ├── fonts
+│ ├── icons
+│ └── images
+├── components
+├── constants
+├── context
+├── hooks
+├── navigation
+├── screens
+├── services
+├── types
+└── utils
 
-# OR using Yarn
-yarn android
-```
+---
 
-### iOS
+## Architecture
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+API
+↓
+Services
+↓
+Context API
+↓
+Custom Hooks
+↓
+Screens
+↓
+Reusable Components
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
+---
 
-```sh
-bundle install
-```
+## State Management
 
-Then, and every time you update your native dependencies, run:
+The application uses Context API to manage shared state across the application.
 
-```sh
-bundle exec pod install
-```
+Managed States:
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+- Coffee List
+- Categories
+- Search
+- Selected Category
+- Favorite Coffees
+- Loading State
+- Error State
 
-```sh
-# Using npm
-npm run ios
+---
 
-# OR using Yarn
-yarn ios
-```
+## Reusable Components
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+- AppHeader
+- AppButton
+- AppIcon
+- SearchBar
+- PromoBanner
+- CoffeeCard
+- CategoryChip
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+---
 
-## Step 3: Modify your app
+## Performance Optimizations
 
-Now that you have successfully run the app, let's make changes!
+- React.memo
+- useMemo
+- useCallback
+- Separation of UI and Business Logic
+- Shared Constants
+- Shared Colors
+- Shared Fonts
+- Shared Types
+- Reusable Components
+- Context API to prevent unnecessary API calls
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+---
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+## Error Handling
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+- API Error Handling
+- Loading Indicators
+- Empty States
+- Retry Mechanism
+- Safe Navigation
+- Optional Chaining
+- Null Checks
 
-## Congratulations! :tada:
+---
 
-You've successfully run and modified your React Native App. :partying_face:
+## Installation
 
-### Now what?
+git clone <repository-url>
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+cd CoffeeShop
 
-# Troubleshooting
+npm install
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+---
 
-# Learn More
+## Run Android
 
-To learn more about React Native, take a look at the following resources:
+npx react-native run-android
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+---
+
+## Run iOS
+
+cd ios
+
+pod install
+
+cd ..
+
+npx react-native run-ios
+
+---
+
+## Generate BootSplash
+
+npx react-native-bootsplash generate src/assets/images/splash.png --background=000000 --logo-width=180
+
+---
+
+## Screens
+
+- Splash
+- Home
+- Coffee Details
+- Order
+- Delivery Tracking
+- Notifications
+
+---
+
+## Future Enhancements
+
+- Authentication
+- Cart Management
+- Payment Gateway Integration
+- Push Notifications
+- Real-time Delivery Tracking
+- Google Maps Integration
+- Dark Mode
+- Offline Support
+- Order History
+- Profile Management
+
+---
+
+## Design Principles Followed
+
+- Clean Architecture
+- Separation of Concerns
+- Component Reusability
+- Single Responsibility Principle
+- Modular Folder Structure
+- Type Safety using TypeScript
+- Centralized Constants
+- Centralized Colors
+- Centralized Assets
+- Custom Hooks for Business Logic
+- Context API for Shared State
+
+---
+
+## Project Highlights
+
+- Built completely using Functional Components.
+- Used Context API for centralized state management.
+- UI and business logic are separated.
+- Reusable components are created for common UI.
+- Dynamic data loaded from Mock API.
+- Implemented reusable AppHeader, AppButton, AppIcon and other shared components.
+- Optimized rendering using React.memo, useMemo and useCallback.
+- Centralized constants, colors, fonts and assets for better maintainability.
+- Implemented scalable folder structure suitable for production-level applications.
+
+---
+
+## License
+
+MIT License

@@ -6,9 +6,9 @@ import { BottomTabParamList } from '../types/Navigation';
 import Colors from '../constants/Colors';
 
 import HomeScreen from '../screens/Home';
-import FavoritesScreen from '../screens/Favorites';
+import FavoriteScreen from '../screens/Favorites';
 import CartScreen from '../screens/Cart';
-//import NotificationsScreen from '../screens/Notifications';
+import NotificationScreen from '../screens/Notifications';
 import BottomTabIcon from '../components/BottomTabIcon';
 import NoFeedbackTabButton from '../components/NoFeedBackTabButton';
 
@@ -53,7 +53,7 @@ const BottomTabNavigator = () => {
 
       <Tab.Screen
         name={Routes.Favorites}
-        component={FavoritesScreen}
+        component={FavoriteScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <BottomTabIcon
@@ -83,7 +83,7 @@ const BottomTabNavigator = () => {
 
       <Tab.Screen
         name={Routes.Notifications}
-        component={FavoritesScreen}
+        component={NotificationScreen}
         options={{
           tabBarIcon: ({ color, focused }) => (
             <BottomTabIcon

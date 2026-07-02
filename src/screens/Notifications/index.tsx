@@ -6,20 +6,20 @@ import styles from './styles';
 import Routes from '../../constants/Routes';
 import AppConstants from '../../constants/AppConstants';
 import AppIcon from '../../components/AppIcon';
-import { CartFilled } from '../../assets/icons';
+import { NotificationFilled } from '../../assets/icons';
 import { BottomTabParamList } from '../../types';
 import AppHeader from '../../components/AppHeader';
 import Colors from '../../constants/Colors';
 
 type Props = BottomTabScreenProps<BottomTabParamList, typeof Routes.Notifications>;
 
-const CartScreen = ({}: Props) => {
+const NotificationScreen = ({}: Props) => {
   return (
     <View style={styles.screen}>
-      <AppHeader title={AppConstants.tabs.cart} />
+      <AppHeader title={AppConstants.tabs.notification} />
       <View style={styles.content}>
         <View style={styles.iconContainer}>
-          <AppIcon Icon={CartFilled} size={72} color={Colors.primary} />
+          <AppIcon Icon={NotificationFilled} size={72} color={Colors.primary} />
         </View>
 
         <Text style={styles.title}>{AppConstants.tabs.comingSoon}</Text>
@@ -29,4 +29,4 @@ const CartScreen = ({}: Props) => {
   );
 };
 
-export default CartScreen;
+export default NotificationScreen;
